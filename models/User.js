@@ -1,4 +1,41 @@
 // **User**:
+const { Schema, model, Types } = require('mongoose');
+
+const userSchema = new Schema(
+    {
+        username: {
+            type: String,
+            unique: true,
+            required: true,
+            trim: true,
+        }, 
+        email: {
+            type: String,
+            unique: true,
+            required: true,
+            validate: {
+                validator : function(v) {
+                    return /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(v);
+                }
+
+            }
+        },
+        thoughts: {
+
+        },
+        friends: {
+
+        },
+        {
+            toJSON: {
+                virtuals: true,
+            },
+            id: false,
+            
+
+        }
+    }
+)
 
 // - `username`
 
