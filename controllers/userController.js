@@ -90,7 +90,7 @@ const UserController = {
       .catch((err) => res.status(400).json(err));
   },
 };
-
+module.exports = UserController;
 // ```json
 // // example data
 // {
@@ -100,9 +100,3 @@ const UserController = {
 // ```
 
 // **BONUS**: Remove a user's associated thoughts when deleted.
-
-// ---
-
-// **`/api/users/:userId/friends/:friendId`**
-
-// ---
