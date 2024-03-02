@@ -111,5 +111,3 @@ module.exports = ThoughtController;
 // ```
 
 // ---
-
-// **`/api/thoughts/:thoughtId/reactions`**
