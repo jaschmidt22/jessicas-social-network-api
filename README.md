@@ -1,4 +1,4 @@
-# Social Network API
+# Jessica's Social Network API
 
 ## Description
 
@@ -25,6 +25,12 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ## Usage
 
 I created a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friends list. After downloading my project, be sure to install node.js and all the required dependencies. Then open the server.js file in your terminal and type "node server.js". Once your server is running, you may switch over to Insomnia or Postman and run all of the API routes.
+<img width="1912" alt="Screenshot 2024-03-04 113609" src="https://github.com/jaschmidt22/jessicas-social-network-api/assets/146290812/3c70489f-2d05-4fd2-a62e-55315ff9987b">
+
+Walk Through Video:
+https://drive.google.com/file/d/1e4FhhR4q9Qp7xbHarq2GRbJ1pibvhOJv/view?usp=sharing
+GitHub Repo:
+https://github.com/jaschmidt22/jessicas-social-network-api
 
 ## Credits
 
