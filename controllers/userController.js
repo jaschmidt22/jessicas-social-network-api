@@ -91,12 +91,3 @@ const UserController = {
   },
 };
 module.exports = UserController;
-// ```json
-// // example data
-// {
-//   "username": "lernantino",
-//   "email": "lernantino@gmail.com"
-// }
-// ```
-
-// **BONUS**: Remove a user's associated thoughts when deleted.

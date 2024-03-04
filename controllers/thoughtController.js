@@ -86,7 +86,7 @@ const ThoughtController = {
   // - `DELETE` to pull and remove a reaction by the reaction's `reactionId` value
   async deleteReaction(req, res) {
     try {
-      const thought = await Thought.findOneAndUpdate(
+      const thought = await Thought.findByIdAndDelete(
         { _id: req.params.thoughtId },
         { $pull: { reactions: { reactionId: req.params.reactionId } } },
         { runValidators: true, new: true }
@@ -100,14 +100,3 @@ const ThoughtController = {
 };
 
 module.exports = ThoughtController;
-
-// ```json
-// // example data
-// {
-//   "thoughtText": "Here's a cool thought...",
-//   "username": "lernantino",
-//   "userId": "5edff358a0fcb779aa7b118b"
-// }
-// ```
-
-// ---
